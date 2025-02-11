@@ -1,31 +1,30 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import "./styles.css";
-
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">Welcome to My Test Site</h1>
-      <p className="text-lg text-gray-600 mb-4 text-center max-w-2xl">
-        This is a simple website designed for testing deployment on Vercel. It has a clean and modern UI.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="p-4">
-          <CardContent className="flex flex-col items-center">
-            <Image src="https://source.unsplash.com/random/400x300" width={400} height={300} alt="Random" className="rounded-2xl shadow-md" />
-            <p className="mt-4 text-gray-700">A randomly generated image from Unsplash.</p>
-          </CardContent>
-        </Card>
-        <Card className="p-4">
-          <CardContent className="flex flex-col items-center">
-            <Image src="https://source.unsplash.com/random/401x301" width={400} height={300} alt="Random" className="rounded-2xl shadow-md" />
-            <p className="mt-4 text-gray-700">Another beautiful image from Unsplash.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <Button className="mt-6 px-6 py-3 text-lg">Learn More</Button>
-    </div>
-  );
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome to My Minimalist Site</h1>
+        <p>This is a simple webpage with images from Google and some sample text.</p>
+    </header>
+    
+    <section class="gallery">
+        <img src="https://via.placeholder.com/400" alt="Google Image 1">
+        <img src="https://via.placeholder.com/400" alt="Google Image 2">
+        <img src="https://via.placeholder.com/400" alt="Google Image 3">
+    </section>
+</body>
+</html>
